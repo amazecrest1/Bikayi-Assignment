@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Testing</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>NOBEL WINNERS</h1>
+    <main>
+        <div id="div2" class="targetDiv">
+            <form id="filters">
+                <div class="card card--inverted">
+                    <div class="margin">
+                        <label class="input">
+                            <input class="input__field" name="year" type="text" />
+                            <span class="input__label">YEAR</span>
+                        </label>
+                    </div>
+
+                    <div class="margin1">
+                        <label class="input">
+                            <input class="input__field" name="yearTo" type="text" />
+                            <span class="input__label">TO YEAR</span>
+                        </label>
+                    </div>
+
+                    <div class="margin2">
+                        <label class="input">
+                            <input class="input__field" name="category" type="text" />
+                            <span class="input__label">CATEGORY</span>
+                        </label>
+                    </div>
+
+                    <div class="button-group">
+                        <input type="submit">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div>
+            <table class="list-group" id="laureatesTable"></table>
+        </div>
+    </main>
+
+    <script src="backend.js"></script>
+</body>
+
+</html>

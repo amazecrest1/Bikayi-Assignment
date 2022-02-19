@@ -1,0 +1,205 @@
+@import url('../CSS/fonts.css');
+@import url('https://rsms.me/inter/inter.css');
+
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+:root{
+    /* Theme colors*/
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #28939c;
+
+    /* Gradient colors*/
+    --sky:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --darksky:linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+
+    /* theme font-family */
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Livvic:'Livivc',cursive;
+    --Lexend:'Lexend',cursive;
+
+
+    --color-light: white;
+    --color-dark: #212121;
+    --color-signal: #fab700;
+    
+    --color-background: var(--color-light);
+    --color-text: var(--color-dark);
+    --color-accent: var(--color-signal);
+    
+    --size-bezel: .5rem;
+    --size-radius: 4px;
+    
+    line-height: 1.4;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: calc(.6rem + .4vw);
+    color: var(--color-text);
+    background: var(--color-background);
+    font-weight: 300;
+    padding: 0 calc(var(--size-bezel) * 3);
+  }
+  
+  h1, h2, h3 {
+    font-weight: 900;
+  }
+  
+  mark {
+    background: var(--color-accent);
+    color: var(--color-text);
+    font-weight: bold;
+    padding: 0 0.2em;
+
+}
+
+/*****************GLOBAL CLASSES******************/
+a{
+    text-decoration: none;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+sapn{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin:0 5vw ;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+.text-center{
+    justify-content: center;
+}
+
+
+ 	main .targetDiv{
+    background-color:#0f0f0f;
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .targetDiv .card--inverted{
+    background: var(--color-dark);
+    padding: calc(4 * var(--size-bezel));
+    width: 1250px;
+    margin-top: 10rem;
+    border-radius: var(--size-radius);
+    border: 3px solid var(--color-shadow, currentColor);
+    box-shadow: .5rem .5rem 0 var(--color-shadow, currentColor);
+    color: var(--color-light);
+    --color-shadow: var(--color-accent);
+}
+
+main .targetDiv .card--inverted .input{
+    position: relative;
+}
+
+main .targetDiv .card--inverted .input .input__label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: -2rem !important; 
+    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
+    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+    background: pink;
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    background: var(--color-dark);
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+main .targetDiv .card--inverted .margin{
+    margin-top: 2rem;
+}
+
+main .targetDiv .card--inverted .margin1{
+    margin-left: 30%;
+    margin-top: -3rem;
+}
+
+main .targetDiv .card--inverted .margin2{
+    margin-left: 60%;
+    margin-top: -3rem;
+}
+
+main .targetDiv .card--inverted .input .input__field{
+    box-sizing: border-box;
+    display: block;
+    width: 250px;
+    border: 3px solid currentColor;
+    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+    color: currentColor;
+    background: transparent;
+    border-radius: var(--size-radius);
+}
+
+main .targetDiv .card--inverted .input .input__field :focus :placeholder-shown,main .targetDiv .card--inverted .input .input__label {
+    transform: translate(.25rem, -65%) scale(.8);
+        color: var(--color-accent);
+}
+
+main .targetDiv .card--inverted .button-group{
+    margin-top: calc(var(--size-bezel) * 2.5);
+}
+main .targetDiv .card--inverted .button-group button {
+    color: currentColor;
+    padding: var(--size-bezel) calc(var(--size-bezel) * 2);
+    background: var(--color-accent);
+    border: none;
+    border-radius: var(--size-radius);
+    font-weight: 900;
+}
